@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Gourmet Fetch | Categorías</title>
+
+  <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css" />
+  
+  <script src="js/modal.js" defer></script>
+  <script src="js/categorias.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <span class="logo-icon">🍴</span>
+      <h1>Gourmet Fetch</h1>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html" class="nav-link active">Categorías</a>
+      <a href="buscar.html" class="nav-link">Buscar</a>
+      <a href="id.html" class="nav-link">Por ID</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <h2>Explora por Categoría</h2>
+    </section>
+
+    <section class="categories-section">
+      <div id="categoriesContainer" class="categories-container"></div>
+    </section>
+
+    <section class="meals-section">
+      <div id="mealsContainer" class="meals-grid"></div>
+    </section>
+  </main>
+
+  <div id="mealModal" class="modal">
+  <div class="modal-content">
+    <button id="closeModal" class="modal-close">&times;</button>
+
+    <div class="modal-body">
+      <div class="modal-image-box">
+        <img id="modalImage" src="" alt="Imagen de la comida" class="modal-image">
+      </div>
+
+      <div class="modal-info">
+        <h2 id="modalTitle" class="modal-title"></h2>
+
+        <div class="modal-tags">
+          <span id="modalCategory" class="modal-tag"></span>
+          <span id="modalArea" class="modal-tag"></span>
+        </div>
+
+        <h3 class="modal-subtitle">Ingredientes</h3>
+        <ul id="modalIngredients" class="modal-list"></ul>
+
+        <h3 class="modal-subtitle">Instrucciones</h3>
+        <p id="modalInstructions" class="modal-instructions"></p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <footer class="footer">
+    <p>Gourmet Fetch | Proyecto Final de JavaScript | Yerelin Rosario🌸</p>
+  </footer>
+</body>
+</html>
